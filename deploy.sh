@@ -27,7 +27,7 @@ echo 关闭tomcat服务器
 sh ${TOMCAT_PATH}/bin/shutdown.sh
 
 echo 删除以往文件
-rm -rf ${TOMCAT_PATH}/bin/webapps/ROOT
+rm -rf ${TOMCAT_PATH}/webapps/ROOT
 
 echo 移动文件
 mv ROOT.war ${TOMCAT_PATH}/webapps/

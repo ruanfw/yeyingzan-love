@@ -25,6 +25,8 @@ cd ${CODE_PATH}/target
 
 echo 关闭tomcat服务器
 sh ${TOMCAT_PATH}/bin/shutdown.sh
+pidlist=`ps -ef |grep tomcat  |grep -v "grep"|awk '{print $2}'`
+kill -9 $pidlist
 
 echo 删除以往文件
 rm -rf ${TOMCAT_PATH}/webapps/ROOT

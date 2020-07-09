@@ -23,7 +23,7 @@ public class ThymeleafController {
 
         int days = (int) ((System.currentTimeMillis() - beginDay) / (1000 * 3600 * 24));
 
-        List<String> list = Lists.newArrayList("1234","2345");
+        List<String> list = Lists.newArrayList("送给我","心爱的小可爱");
 
         view.addObject("days", days);
         view.addObject("list", list);

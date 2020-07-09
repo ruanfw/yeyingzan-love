@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping
 public class ThymeleafController {
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public ModelAndView index() {
         final ModelAndView view = new ModelAndView();
         // 设置跳转的视图 默认映射到 src/main/resources/templates/{viewName}.html

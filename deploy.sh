@@ -28,6 +28,7 @@ sh ${TOMCAT_PATH}/bin/shutdown.sh
 
 echo 删除以往文件
 rm -rf ${TOMCAT_PATH}/webapps/ROOT
+rm -rf ${TOMCAT_PATH}/webapps/ROOT.war
 
 echo 移动文件
 mv ROOT.war ${TOMCAT_PATH}/webapps/

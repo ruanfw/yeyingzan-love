@@ -20,8 +20,8 @@ mvn clean package -Dmaven.test.skip=true
 echo 进入编译完成文件
 cd ${CODE_PATH}/target
 
-echo 文件重命名
-mv yeyingzan-love-0.0.1-SNAPSHOT.war ROOT.war
+#echo 文件重命名
+#mv ROOT.war ROOT.war
 
 echo 关闭tomcat服务器
 sh ${TOMCAT_PATH}/bin/shutdown.sh

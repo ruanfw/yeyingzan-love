@@ -25,8 +25,11 @@ public class ThymeleafController {
 
         List<String> list = Lists.newArrayList("送给我","心爱的小可爱");
 
+        String name = "大宝 & 二宝";
+
         view.addObject("days", days);
         view.addObject("list", list);
+        view.addObject("name", name);
         return view;
     }
 }

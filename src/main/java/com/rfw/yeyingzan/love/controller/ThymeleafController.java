@@ -23,7 +23,7 @@ public class ThymeleafController {
 
         int days = (int) ((System.currentTimeMillis() - beginDay) / (1000 * 3600 * 24));
 
-        List<String> list = Lists.newArrayList("送给我","心爱的小可爱");
+        List<String> list = Lists.newArrayList("你的过去", "我来不及参与，", "你的未来", "我为你遮风挡雨");
 
         String name = "大宝 & 二宝";
 
